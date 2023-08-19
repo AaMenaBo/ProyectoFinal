@@ -36,7 +36,7 @@ public class frmMenu extends javax.swing.JFrame {
         panel.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "MenuPrincipal"));
         panel.setLayout(new java.awt.GridLayout(0, 1, 15, 15));
 
-        btnPunto1.setText("Arbol de Busqueda Binario");
+        btnPunto1.setText("Punto 1 - Arbol Binario de Busqueda");
         panel.add(btnPunto1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -45,7 +45,7 @@ public class frmMenu extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(

@@ -4,17 +4,21 @@
  */
 package View;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author menab
  */
 public class frmPunto1 extends javax.swing.JFrame {
-
+    private JFrame padre;
+    
     /**
      * Creates new form frmPunto1
      */
-    public frmPunto1() {
+    public frmPunto1(JFrame padre) {
         initComponents();
+        this.padre = padre;
     }
 
     /**
@@ -26,31 +30,64 @@ public class frmPunto1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        display = new javax.swing.JTextArea();
+        jPanel1 = new javax.swing.JPanel();
+        btnIniciar = new javax.swing.JButton();
+        btnMostrar = new javax.swing.JButton();
+        btnBorrar = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Ejemplo de Arbol Binario de Busqueda");
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosed(java.awt.event.WindowEvent evt) {
+                formWindowClosed(evt);
+            }
+        });
 
-        jLabel1.setText("Esto es un frame para punto1");
+        display.setColumns(20);
+        display.setRows(5);
+        display.setText("Bienvenido!");
+        jScrollPane1.setViewportView(display);
+
+        jPanel1.setLayout(new java.awt.GridLayout(1, 0, 15, 0));
+
+        btnIniciar.setText("Iniciar ejemplo");
+        jPanel1.add(btnIniciar);
+
+        btnMostrar.setText("Mostrar Valores Base");
+        jPanel1.add(btnMostrar);
+
+        btnBorrar.setText("Limpiar");
+        jPanel1.add(btnBorrar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(158, 158, 158)
-                .addComponent(jLabel1)
-                .addContainerGap(88, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 626, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(124, 124, 124)
-                .addComponent(jLabel1)
-                .addContainerGap(160, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+                .addGap(10, 10, 10))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
+        padre.setVisible(true);
+    }//GEN-LAST:event_formWindowClosed
 
     /**
      * @param args the command line arguments
@@ -80,14 +117,15 @@ public class frmPunto1 extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new frmPunto1().setVisible(true);
-            }
-        });
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    public javax.swing.JButton btnBorrar;
+    public javax.swing.JButton btnIniciar;
+    public javax.swing.JButton btnMostrar;
+    public javax.swing.JTextArea display;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }

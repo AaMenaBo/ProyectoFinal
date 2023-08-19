@@ -30,9 +30,11 @@ public class CtrlMenu implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         //Si el origen de la accion es btnPunto1
         if (e.getSource() == frame.btnPunto1) {
-            frmPunto1 punto1 = new frmPunto1();
+            frmPunto1 punto1 = new frmPunto1(frame);
             punto1.setLocationRelativeTo(frame);
             punto1.setVisible(true);
+            frame.setVisible(false);
+            CtrlPunto1 ctrlPunto1 = new CtrlPunto1(punto1);
         }
     }
 }

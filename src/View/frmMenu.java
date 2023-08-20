@@ -30,6 +30,7 @@ public class frmMenu extends javax.swing.JFrame {
 
         panel = new javax.swing.JPanel();
         btnPunto1 = new javax.swing.JButton();
+        btnPunto2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -38,6 +39,10 @@ public class frmMenu extends javax.swing.JFrame {
 
         btnPunto1.setText("Punto 1 - Arbol Binario de Busqueda");
         panel.add(btnPunto1);
+
+        btnPunto2.setText("Punto 2 - Hilos");
+        btnPunto2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        panel.add(btnPunto2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -97,6 +102,7 @@ public class frmMenu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnPunto1;
+    public javax.swing.JButton btnPunto2;
     private javax.swing.JPanel panel;
     // End of variables declaration//GEN-END:variables
 }

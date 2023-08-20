@@ -6,6 +6,7 @@ package Controller;
 
 import View.frmPunto1;
 import View.frmMenu;
+import View.frmPunto2;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -24,6 +25,8 @@ public class CtrlMenu implements ActionListener {
 
         //Agregar ActionListener a los Botones
         this.frame.btnPunto1.addActionListener(this);
+        this.frame.btnPunto2.addActionListener(this);
+        
     }
 
     @Override
@@ -31,10 +34,13 @@ public class CtrlMenu implements ActionListener {
         //Si el origen de la accion es btnPunto1
         if (e.getSource() == frame.btnPunto1) {
             frmPunto1 punto1 = new frmPunto1(frame);
-            punto1.setLocationRelativeTo(frame);
-            punto1.setVisible(true);
-            frame.setVisible(false);
             CtrlPunto1 ctrlPunto1 = new CtrlPunto1(punto1);
+            frame.setVisible(false);
+        }else if(e.getSource() == frame.btnPunto2){
+            frmPunto2 punto2 = new frmPunto2(frame);
+            CtrlPunto2 Ctrl = new CtrlPunto2(punto2);
+            frame.setVisible(false);
+            
         }
     }
 }

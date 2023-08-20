@@ -52,33 +52,33 @@ public class CtrlPunto1 implements ActionListener {
 
             sout("Realizamos diferentes búsquedas");
             if (abb.buscarElemento(20) != null) {
-                sout("Elemento "+20+" encontrado ");
+                sout("Elemento " + 20 + " encontrado ");
             } else {
-                sout("Elemento "+20+" no encontrado");
+                sout("Elemento " + 20 + " no encontrado");
             }
 
             if (abb.buscarElemento(72) != null) {
-                sout("Elemento "+72+" encontrado");
+                sout("Elemento " + 72 + " encontrado");
             } else {
-                sout("Elemento "+72+" no encontrado");
+                sout("Elemento " + 72 + " no encontrado");
             }
 
             if (abb.buscarElemento(56) != null) {
-                sout("Elemento "+56+" encontrado");
+                sout("Elemento " + 56 + " encontrado");
             } else {
-                sout("Elemento "+56+" no encontrado");
+                sout("Elemento " + 56 + " no encontrado");
             }
 
             if (abb.buscarElemento(6) != null) {
-                sout("Elemento "+6+" encontrado");
+                sout("Elemento " + 6 + " encontrado");
             } else {
-                sout("Elemento "+6+" no encontrado");
+                sout("Elemento " + 6 + " no encontrado");
             }
 
             if (abb.buscarElemento(9) != null) {
-                sout("Elemento "+9+" encontrado");
+                sout("Elemento " + 9 + " encontrado");
             } else {
-                sout("Elemento "+9+" no encontrado");
+                sout("Elemento " + 9 + " no encontrado");
             }
 
             //imprimimos estadisticas
@@ -88,34 +88,34 @@ public class CtrlPunto1 implements ActionListener {
             sout("Eliminamos nodos");
             sout("Eliminamos la raiz");
             abb.eliminarElemento(15);
-             sout("Eliminamos nodos");
+            sout("Eliminamos nodos");
             abb.eliminarElemento(13);
             abb.eliminarElemento(14);
             abb.eliminarElemento(64);
 
-             sout("Buscamos los elementos eliminado");
+            sout("Buscamos los elementos eliminado");
             if (abb.buscarElemento(15) != null) {
-                sout("Elemento "+15+" encontrado");
+                sout("Elemento " + 15 + " encontrado");
             } else {
-                sout("Elemento "+15+" no encontrado");
+                sout("Elemento " + 15 + " no encontrado");
             }
 
             if (abb.buscarElemento(13) != null) {
-                sout("Elemento "+13+" encontrado");
+                sout("Elemento " + 13 + " encontrado");
             } else {
-                sout("Elemento "+13+" no encontrado");
+                sout("Elemento " + 13 + " no encontrado");
             }
 
             if (abb.buscarElemento(14) != null) {
-                sout("Elemento "+14+" encontrado");
+                sout("Elemento " + 14 + " encontrado");
             } else {
-                sout("Elemento "+14+" no encontrado");
+                sout("Elemento " + 14 + " no encontrado");
             }
 
             if (abb.buscarElemento(64) != null) {
-                sout("Elemento "+64+" encontrado");
+                sout("Elemento " + 64 + " encontrado");
             } else {
-                sout("Elemento "+64+" no encontrado");
+                sout("Elemento " + 64 + " no encontrado");
             }
 
             numerosOrdenadosAscedentemente = abb.obtenerElementosOrdenadosAscendentemente();
@@ -137,15 +137,18 @@ public class CtrlPunto1 implements ActionListener {
             //Imprimimos el número de elementos que tenemos:
             sout("Número de elementos: " + abb.size());
 
-        }else if (e.getSource() == frame.btnMostrar) {
+        } else if (e.getSource() == frame.btnMostrar) {
             JOptionPane.showMessageDialog(frame, listaElementos(), "Lista de Elementos", JOptionPane.INFORMATION_MESSAGE);
-        }else if(e.getSource() == frame.btnBorrar){
+        } else if (e.getSource() == frame.btnBorrar) {
             this.borrarDisplay();
         }
     }
 
     public CtrlPunto1(frmPunto1 param) {
         frame = param;
+        frame.setLocationRelativeTo(frame);
+        frame.setVisible(true);
+
         frame.btnIniciar.addActionListener(this);
         frame.btnMostrar.addActionListener(this);
         frame.btnBorrar.addActionListener(this);
@@ -153,7 +156,7 @@ public class CtrlPunto1 implements ActionListener {
 
     private void sout(String line) {
         frame.display.setText(frame.display.getText() + "\n" + line);
-        
+
     }
 
     private void borrarDisplay() {

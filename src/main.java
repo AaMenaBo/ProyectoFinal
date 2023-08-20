@@ -1,5 +1,6 @@
 
 import Controller.CtrlMenu;
+import Recursos.Aleatorio;
 import View.frmMenu;
 
 /*
@@ -18,6 +19,7 @@ public class main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
         frmMenu frm = new frmMenu();
         frm.setVisible(true);
         CtrlMenu ctrl = new CtrlMenu(frm);

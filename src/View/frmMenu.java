@@ -32,6 +32,7 @@ public class frmMenu extends javax.swing.JFrame {
         btnPunto1 = new javax.swing.JButton();
         btnPunto2 = new javax.swing.JButton();
         btnPunto3 = new javax.swing.JButton();
+        btnPunto7 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,6 +49,9 @@ public class frmMenu extends javax.swing.JFrame {
         btnPunto3.setText("Punto 3 - Gestion de Excepciones");
         btnPunto3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         panel.add(btnPunto3);
+
+        btnPunto7.setText("Punto 7 - Listas");
+        panel.add(btnPunto7);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -109,6 +113,7 @@ public class frmMenu extends javax.swing.JFrame {
     public javax.swing.JButton btnPunto1;
     public javax.swing.JButton btnPunto2;
     public javax.swing.JButton btnPunto3;
+    public javax.swing.JButton btnPunto7;
     private javax.swing.JPanel panel;
     // End of variables declaration//GEN-END:variables
 }

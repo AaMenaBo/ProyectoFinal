@@ -32,6 +32,7 @@ public class frmMenu extends javax.swing.JFrame {
         btnPunto1 = new javax.swing.JButton();
         btnPunto2 = new javax.swing.JButton();
         btnPunto3 = new javax.swing.JButton();
+        btnPunto5 = new javax.swing.JButton();
         btnPunto7 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -50,6 +51,9 @@ public class frmMenu extends javax.swing.JFrame {
         btnPunto3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         panel.add(btnPunto3);
 
+        btnPunto5.setText("Punto 5 - Pilas");
+        panel.add(btnPunto5);
+
         btnPunto7.setText("Punto 7 - Listas");
         panel.add(btnPunto7);
 
@@ -59,14 +63,14 @@ public class frmMenu extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, 247, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, 461, Short.MAX_VALUE)
+                .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, 438, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -113,6 +117,7 @@ public class frmMenu extends javax.swing.JFrame {
     public javax.swing.JButton btnPunto1;
     public javax.swing.JButton btnPunto2;
     public javax.swing.JButton btnPunto3;
+    public javax.swing.JButton btnPunto5;
     public javax.swing.JButton btnPunto7;
     private javax.swing.JPanel panel;
     // End of variables declaration//GEN-END:variables

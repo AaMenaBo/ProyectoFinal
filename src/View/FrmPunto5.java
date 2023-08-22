@@ -10,14 +10,14 @@ import javax.swing.JFrame;
  *
  * @author Laribel
  */
-public class FrmPunto6 extends javax.swing.JDialog {
+public class FrmPunto5 extends javax.swing.JDialog {
 
     /**
      * Creates new form frmPunto6
      */
     
       private JFrame padre;
-    public FrmPunto6(JFrame padre) {
+    public FrmPunto5(JFrame padre) {
   
         initComponents();
          this.padre = padre;

@@ -8,7 +8,7 @@ import Model.Nodo2;
 import Model.Pila;
 import Recursos.Mensaje;
 import View.frmPunto2;
-import View.FrmPunto6;
+import View.FrmPunto5;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -18,19 +18,20 @@ import javax.swing.JProgressBar;
  *
  * @author Laribel
  */
-public class CtrlPunto6 implements ActionListener {
+public class CtrlPunto5 implements ActionListener {
   
     private Pila pila;
     String opcion= "", info= "";
-    private FrmPunto6 frame6;
+    private FrmPunto5 frame6;
     
     
-     public CtrlPunto6( FrmPunto6 frame6) {
+     public CtrlPunto5( FrmPunto5 frame6) {
         this.frame6 = frame6;     
-        
+        this.pila = new Pila();
         this.frame6.btnPush.addActionListener(this);
         this.frame6.btnPop.addActionListener(this);
-        frame6.setLocationRelativeTo(null);
+        this.frame6.setLocationRelativeTo(null);
+        this.frame6.setVisible(true);
       
     }
   

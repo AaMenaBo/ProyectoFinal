@@ -14,6 +14,11 @@ public class Pila {
     private Nodo2 tope;
     private int total;
 
+    public Pila() {
+        this.tope = tope;
+        this.total = total;
+    }
+    
     public int getTotal() {
         return total;
     }

@@ -25,7 +25,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="panel" pref="247" max="32767" attributes="0"/>
+              <Component id="panel" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -73,7 +73,7 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Punto 2 - Hilos"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-              <Color id="Default Cursor"/>
+              <Color id="Cursor Por defecto"/>
             </Property>
           </Properties>
           <AuxValues>
@@ -84,7 +84,18 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Punto 3 - Gestion de Excepciones"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-              <Color id="Default Cursor"/>
+              <Color id="Cursor Por defecto"/>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnPunto4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Punto 4 - Algoritmos Iterativos y Recursivos"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Cursor Por defecto"/>
             </Property>
           </Properties>
           <AuxValues>
@@ -99,9 +110,27 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
+        <Component class="javax.swing.JButton" name="btnPunto6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Punto 6 - Cola"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
+        </Component>
         <Component class="javax.swing.JButton" name="btnPunto7">
           <Properties>
             <Property name="text" type="java.lang.String" value="Punto 7 - Listas"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator1">
+        </Component>
+        <Component class="javax.swing.JButton" name="btnIntegrantes">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Integrantes"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>

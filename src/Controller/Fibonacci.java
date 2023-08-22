@@ -15,11 +15,12 @@ import javax.swing.JTextArea;
 public class Fibonacci extends Thread{
     private JTextArea text;
     private boolean  mode;
-    private static final int TEMPO = 300 ;
+    private static final int TEMPO = 450 ;
+    private static final int CANTIDAD = 20;
     
     public void run(){
         if (mode) {
-            for (int i = 0; i <= 10; i++) {
+            for (int i = 0; i <= CANTIDAD; i++) {
                 newLine(String.valueOf(fibonacci(i)));
                 try {
                     Thread.sleep(TEMPO);
@@ -28,7 +29,7 @@ public class Fibonacci extends Thread{
                 }
             }
         }else{
-            for (int i = 0; i <= 10; i++) {
+            for (int i = 0; i <= CANTIDAD; i++) {
                 newLine(String.valueOf(fibonacciRecursivo(i)));
                 try {
                     Thread.sleep(TEMPO);
@@ -51,7 +52,6 @@ public class Fibonacci extends Thread{
     private int fibonacci(int posicion) {
         int siguiente = 1, actual = 0, temporal = 0;
         for (int x = 1; x <= posicion; x++) {
-            System.out.print(actual + ", ");
             temporal = actual;
             actual = siguiente;
             siguiente = siguiente + temporal;

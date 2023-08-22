@@ -6,13 +6,9 @@ package Controller;
 
 import Model.Nodo2;
 import Model.Pila;
-import Recursos.Mensaje;
-import View.frmPunto2;
 import View.FrmPunto5;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import javax.swing.JProgressBar;
 
 /**
  *

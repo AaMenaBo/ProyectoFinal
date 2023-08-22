@@ -33,6 +33,7 @@ public class frmMenu extends javax.swing.JFrame {
         btnPunto2 = new javax.swing.JButton();
         btnPunto3 = new javax.swing.JButton();
         btnPunto5 = new javax.swing.JButton();
+        btnPunto6 = new javax.swing.JButton();
         btnPunto7 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -53,6 +54,9 @@ public class frmMenu extends javax.swing.JFrame {
 
         btnPunto5.setText("Punto 5 - Pilas");
         panel.add(btnPunto5);
+
+        btnPunto6.setText("Punto 6 - Cola");
+        panel.add(btnPunto6);
 
         btnPunto7.setText("Punto 7 - Listas");
         panel.add(btnPunto7);
@@ -118,6 +122,7 @@ public class frmMenu extends javax.swing.JFrame {
     public javax.swing.JButton btnPunto2;
     public javax.swing.JButton btnPunto3;
     public javax.swing.JButton btnPunto5;
+    public javax.swing.JButton btnPunto6;
     public javax.swing.JButton btnPunto7;
     private javax.swing.JPanel panel;
     // End of variables declaration//GEN-END:variables

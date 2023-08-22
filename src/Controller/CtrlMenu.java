@@ -26,6 +26,7 @@ public class CtrlMenu implements ActionListener {
         this.frame.btnPunto2.addActionListener(this);
         this.frame.btnPunto3.addActionListener(this);
         this.frame.btnPunto5.addActionListener(this);
+        this.frame.btnPunto6.addActionListener(this);
         this.frame.btnPunto7.addActionListener(this);
         
     }
@@ -48,11 +49,16 @@ public class CtrlMenu implements ActionListener {
         }else if (e.getSource() == frame.btnPunto5) {
             FrmPunto5 punto5 = new FrmPunto5(frame);
             CtrlPunto5 Ctrl = new CtrlPunto5(punto5);
-            frame.setVisible(false);          
-        }else if(e.getSource() == frame.btnPunto7){
+            frame.setVisible(false);  
+            
+        } else if(e.getSource() == frame.btnPunto6){
+            FrmPunto6 punto6 = new FrmPunto6(frame);
+            CtrlPunto6 Ctrl = new CtrlPunto6(punto6);
+            frame.setVisible(false);
+         }  else if(e.getSource() == frame.btnPunto7){
             frmPunto7 punto7 = new frmPunto7(frame);
             CtrlPunto7 Ctrl = new CtrlPunto7(punto7);
-            frame.setVisible(false); 
-         }   
+            frame.setVisible(false);
+           }
     }
 }

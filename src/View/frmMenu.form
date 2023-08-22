@@ -99,6 +99,14 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
+        <Component class="javax.swing.JButton" name="btnPunto6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Punto 6 - Cola"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
+        </Component>
         <Component class="javax.swing.JButton" name="btnPunto7">
           <Properties>
             <Property name="text" type="java.lang.String" value="Punto 7 - Listas"/>
